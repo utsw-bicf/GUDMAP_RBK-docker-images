@@ -8,9 +8,15 @@ images:
   gudmap-rbk_base:
     1.0.0:
       children:
-      - null
+      - python3:1.0.0
       parents:
       - ubuntu:20.10
+  python3:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - gudmap-rbk_base:1.0.0
   ubuntu:
     '20.10':
       children:
@@ -19,5 +25,6 @@ images:
 latest:
   base: 1.0.0
   gudmap-rbk_base: 1.0.0
+  python3: 1.0.0
   ubuntu: '20.10'
 terminated: {}
