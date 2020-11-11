@@ -1,7 +1,23 @@
 images:
   base:
     1.0.0:
-      children: [null]
-      parents: ["ubuntu:18.04"]
-latest: { base: 1.0.0 }
+      children:
+      - null
+      parents:
+      - ubuntu:18.04
+  gudmap-rbk_base:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - ubuntu:20.10
+  ubuntu:
+    '20.10':
+      children:
+      - gudmap-rbk_base:1.0.0
+      parents: []
+latest:
+  base: 1.0.0
+  gudmap-rbk_base: 1.0.0
+  ubuntu: '20.10'
 terminated: {}
