@@ -1,0 +1,3 @@
+commands:
+  - cmd: "deriva-download-cli --version"
+    expect_text: "1.3.*"
