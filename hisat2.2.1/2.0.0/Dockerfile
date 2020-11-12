@@ -8,4 +8,4 @@ RUN wget https://cloud.biohpc.swmed.edu/index.php/s/fE9QCsX3NH4QwBi/download && 
   make && \
   cd /
 
-ENV PATH=/hisat2-2.2.1/:${PATH}
+ENV PATH=/usr/bin/hisat2-2.2.1:${PATH}
