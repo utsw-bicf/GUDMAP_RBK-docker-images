@@ -7,30 +7,31 @@ commands:
     expect_text: |
       gtfToGenePred - convert a GTF file to a genePred
       usage:
-        gtfToGenePred gtf genePred
+         gtfToGenePred gtf genePred
 
       options:
-          -genePredExt - create a extended genePred, including frame
+           -genePredExt - create a extended genePred, including frame
             information and gene name
-          -allErrors - skip groups with errors rather than aborting.
+           -allErrors - skip groups with errors rather than aborting.
             Useful for getting infomation about as many errors as possible.
-          -ignoreGroupsWithoutExons - skip groups contain no exons rather than
+           -ignoreGroupsWithoutExons - skip groups contain no exons rather than
             generate an error.
-          -infoOut=file - write a file with information on each transcript
-          -sourcePrefix=pre - only process entries where the source name has the
+           -infoOut=file - write a file with information on each transcript
+           -sourcePrefix=pre - only process entries where the source name has the
             specified prefix.  May be repeated.
-          -impliedStopAfterCds - implied stop codon in after CDS
-          -simple    - just check column validity, not hierarchy, resulting genePred may be damaged
-          -geneNameAsName2 - if specified, use gene_name for the name2 field
+           -impliedStopAfterCds - implied stop codon in after CDS
+           -simple    - just check column validity, not hierarchy, resulting genePred may be damaged
+           -geneNameAsName2 - if specified, use gene_name for the name2 field
             instead of gene_id.
-          -includeVersion - it gene_version and/or transcript_version attributes exist, include the version
+           -includeVersion - it gene_version and/or transcript_version attributes exist, include the version
             in the corresponding identifiers.
+
   - cmd: "genePredToBed 2>&1"
     expect_text: |
       genePredToBed - Convert from genePred to bed format. Does not yet handle genePredExt
       usage:
-        genePredToBed in.genePred out.bed
+         genePredToBed in.genePred out.bed
       options:
-        -tab - genePred fields are separated by tab instead of just white space
-        -fillSpace - when tab input, fill space chars in 'name' with underscore: _
-        -score=N - set score to N in bed output (default 0)
+         -tab - genePred fields are separated by tab instead of just white space
+         -fillSpace - when tab input, fill space chars in 'name' with underscore: _
+         -score=N - set score to N in bed output (default 0)
