@@ -1,0 +1,5 @@
+commands:
+  - cmd: "hisat2 --version | head -n 2"
+    expect_text: |
+      /hisat2-2.2.1/hisat2-align-s version 2.2.1
+      64-bit
