@@ -3,7 +3,7 @@ commands:
     expect_text: |
       /usr/bin/hisat2-2.2.1/hisat2-align-s version 2.2.1
       64-bit
-  - cmd: "gtfToGenePred &2>1"
+  - cmd: "gtfToGenePred 2>&1"
     expect_text: |
       gtfToGenePred - convert a GTF file to a genePred
       usage:
@@ -25,7 +25,7 @@ commands:
             instead of gene_id.
           -includeVersion - it gene_version and/or transcript_version attributes exist, include the version
             in the corresponding identifiers.
-  - cmd: "genePredToBed &2>1"
+  - cmd: "genePredToBed 2>&1"
     expect_text: |
       genePredToBed - Convert from genePred to bed format. Does not yet handle genePredExt
       usage:
