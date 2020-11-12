@@ -20,9 +20,16 @@ images:
   python3:
     1.0.0:
       children:
+      - samtools1.9:2.0.0
       - deriva1.3:1.0.0
       parents:
       - gudmap-rbk_base:1.0.0
+  samtools1.9:
+    2.0.0:
+      children:
+      - null
+      parents:
+      - python3:1.0.0
   ubuntu:
     '20.10':
       children:
@@ -33,5 +40,6 @@ latest:
   deriva1.3: 1.0.0
   gudmap-rbk_base: 1.0.0
   python3: 1.0.0
+  samtools1.9: 2.0.0
   ubuntu: '20.10'
 terminated: {}
