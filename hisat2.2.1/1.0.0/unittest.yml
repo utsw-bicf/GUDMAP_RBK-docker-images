@@ -32,4 +32,4 @@ commands:
       options:
       -tab - genePred fields are separated by tab instead of just white space
       -fillSpace - when tab input, fill space chars in 'name' with underscore: _
-      -score=N - set score to N in bed output (default 0)
+      -score=N - set score to N in bed output \(default 0\)
