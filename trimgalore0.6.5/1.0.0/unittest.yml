@@ -1,0 +1,6 @@
+commands:
+  - cmd: "trim_galore --version"
+    expect_text: |
+                        Quality-/Adapter-/RRBS-/Speciality-Trimming
+                                [powered by Cutadapt]
+                                  version 0.6.5
