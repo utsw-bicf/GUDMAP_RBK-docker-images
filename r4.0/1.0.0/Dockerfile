@@ -11,5 +11,5 @@ RUN apt-get update -y --fix-missing && \
   dpkg -i libicu66_66.1-2ubuntu2_amd64.deb && \
   apt-get -f install -y r-base=4.0.3-1.2004.0 r-base-core r-recommended
 
-RUN R -e "install.packages c((\"BiocManager\",\"optparse\"))" && \
+RUN R -e "install.packages(c(\"BiocManager\",\"optparse\"))" && \
   R -e "BiocManager::install(c(\"DESeq2\", \"edgeR\"))"
