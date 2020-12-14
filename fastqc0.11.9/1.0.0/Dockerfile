@@ -5,5 +5,3 @@ RUN apt-get update --fix-missing -y && \
   apt-get install -y default-jre
 
 RUN conda install -c bioconda fastqc=0.11.9
-
-ENTRYPOINT ["fastqc"]
