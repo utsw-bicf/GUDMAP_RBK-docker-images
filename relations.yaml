@@ -35,7 +35,8 @@ images:
     1.0.0:
       children:
       - hisat2.2.1:1.0.0
-      parents: []
+      parents:
+      - python3:1.0.0
   ubuntu:
     '20.10':
       children:
@@ -45,6 +46,7 @@ latest:
   base: 1.0.0
   deriva1.3: 1.0.0
   gudmap-rbk_base: 1.0.0
+  hisat2.2.1: 1.0.0
   python3: 1.0.0
   samtools1.11: 1.0.0
   ubuntu: '20.10'
