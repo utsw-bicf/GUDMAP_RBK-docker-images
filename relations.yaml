@@ -28,7 +28,6 @@ images:
       children:
       - fastqc0.11.9:1.0.0
       - samtools1.11:1.0.0
-      - samtools1.9:1.0.0
       - deriva1.3:1.0.0
       parents:
       - gudmap-rbk_base:1.0.0
