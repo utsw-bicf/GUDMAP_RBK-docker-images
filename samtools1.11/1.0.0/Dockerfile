@@ -14,7 +14,7 @@ WORKDIR /usr/bin
 RUN wget https://github.com/samtools/samtools/releases/download/1.11/samtools-1.11.tar.bz2 && \
     tar -xvjf samtools-1.11.tar.bz2 && \
     rm samtools-1.11.tar.bz2
-WORKDIR /usr/bin//samtools-1.9
+WORKDIR /usr/bin//samtools-1.11
 RUN ./configure && \
     make && make install
 WORKDIR /usr/bin
