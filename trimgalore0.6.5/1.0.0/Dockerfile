@@ -1,4 +1,4 @@
-FROM gudmaprbk//fastqc0.11.9:1.0.0
+FROM gudmaprbk/fastqc0.11.9:1.0.0
 LABEL author="Gervaise H. Henry"
 
 RUN pip3 install --upgrade cutadapt==3.1
