@@ -23,7 +23,6 @@ images:
       - null
       parents:
       - samtools1.11:1.0.0
-      - samtools1.9:1.0.0
   python3:
     1.0.0:
       children:
@@ -36,12 +35,6 @@ images:
       children:
       - hisat2.2.1:1.0.0
       parents: []
-  samtools1.9:
-    1.0.0:
-      children:
-      - hisat2.2.1:1.0.0
-      parents:
-      - python3:1.0.0
   ubuntu:
     '20.10':
       children:
@@ -54,6 +47,5 @@ latest:
   hisat2.2.1: 1.0.0
   python3: 1.0.0
   samtools1.11: 1.0.0
-  samtools1.9: 1.0.0
   ubuntu: '20.10'
 terminated: {}
