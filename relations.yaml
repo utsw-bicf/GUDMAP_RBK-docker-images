@@ -11,6 +11,12 @@ images:
       - null
       parents:
       - python3:1.0.0
+  fastqc0.11.9:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - python3:1.0.0
   gudmap-rbk_base:
     1.0.0:
       children:
@@ -20,6 +26,8 @@ images:
   python3:
     1.0.0:
       children:
+      - fastqc0.11.9:1.0.0
+      - samtools1.11:1.0.0
       - samtools1.9:1.0.0
       - deriva1.3:1.0.0
       parents:
@@ -38,6 +46,7 @@ images:
 latest:
   base: 1.0.0
   deriva1.3: 1.0.0
+  fastqc0.11.9: 1.0.0
   gudmap-rbk_base: 1.0.0
   python3: 1.0.0
   samtools1.11: 1.0.0
