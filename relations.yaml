@@ -17,12 +17,6 @@ images:
       - python3:1.0.0
       parents:
       - ubuntu:20.10
-  hisat2.2.1:
-    1.0.0:
-      children:
-      - null
-      parents:
-      - samtools1.9:1.0.0
   python3:
     1.0.0:
       children:
