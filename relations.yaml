@@ -26,10 +26,17 @@ images:
   python3:
     1.0.0:
       children:
+      - samtools1.11:1.0.0
       - samtools1.9:1.0.0
       - deriva1.3:1.0.0
       parents:
       - gudmap-rbk_base:1.0.0
+  samtools1.11:
+    1.0.0:
+      children:
+      - hisat2.2.1:1.0.0
+      parents:
+      - python3:1.0.0
   samtools1.9:
     1.0.0:
       children:
@@ -47,6 +54,7 @@ latest:
   gudmap-rbk_base: 1.0.0
   hisat2.2.1: 1.0.0
   python3: 1.0.0
+  samtools1.11: 1.0.0
   samtools1.9: 1.0.0
   ubuntu: '20.10'
 terminated: {}

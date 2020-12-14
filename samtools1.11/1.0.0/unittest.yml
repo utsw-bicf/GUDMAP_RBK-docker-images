@@ -1,5 +1,5 @@
 commands:
   - cmd: "samtools --version | head -n2"
     expect_text: |
-      samtools 1.9
-      Using htslib 1.9
+      samtools 1.11
+      Using htslib 1.11
