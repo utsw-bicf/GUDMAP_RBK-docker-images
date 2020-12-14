@@ -1,4 +1,4 @@
-FROM gudmaprbk/samtools1.9:1.0.0
+FROM gudmaprbk/samtools1.11:1.0.0
 LABEL author="Jon Gesell"
 
 RUN wget https://cloud.biohpc.swmed.edu/index.php/s/fE9QCsX3NH4QwBi/download && \
