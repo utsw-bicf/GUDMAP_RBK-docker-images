@@ -14,7 +14,7 @@ images:
   fastqc0.11.9:
     1.0.0:
       children:
-      - null
+      - trimgalore0.6.5:1.0.0
       parents:
       - python3:1.0.0
   gudmap-rbk_base:
@@ -44,6 +44,12 @@ images:
       - hisat2.2.1:1.0.0
       parents:
       - python3:1.0.0
+  trimgalore0.6.5:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - fastqc0.11.9:1.0.0
   ubuntu:
     '20.10':
       children:
@@ -57,5 +63,6 @@ latest:
   hisat2.2.1: 1.0.0
   python3: 1.0.0
   samtools1.11: 1.0.0
+  trimgalore0.6.5: 1.0.0
   ubuntu: '20.10'
 terminated: {}
