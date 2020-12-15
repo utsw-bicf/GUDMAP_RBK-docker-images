@@ -1,5 +1,3 @@
 commands:
-  - cmd: "featureCounts"
-    expect_text: ""
-  - cmd: "featureCounts -v | grep -o featureCounts.*"
+  - cmd: "featureCounts -v"
     expect_text: "featureCounts v2.0.1"
