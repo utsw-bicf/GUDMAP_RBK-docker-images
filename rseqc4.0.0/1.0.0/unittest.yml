@@ -1,0 +1,3 @@
+commands:
+  - cmd: "infer_experiment.py"
+    expect_text: "infer_experiment.py 4.0.0"
