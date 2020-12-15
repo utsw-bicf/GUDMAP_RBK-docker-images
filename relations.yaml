@@ -42,7 +42,7 @@ images:
   r4.0:
     1.0.0:
       children:
-      - null
+      - subread2.0.1:1.0.0
       parents:
       - gudmap-rbk_base:1.0.0
   samtools1.11:
@@ -51,6 +51,12 @@ images:
       - hisat2.2.1:1.0.0
       parents:
       - python3:1.0.0
+  subread2.0.1:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - r4.0:1.0.0
   trimgalore0.6.5:
     1.0.0:
       children:
@@ -71,6 +77,7 @@ latest:
   python3: 1.0.0
   r4.0: 1.0.0
   samtools1.11: 1.0.0
+  subread2.0.1: 1.0.0
   trimgalore0.6.5: 1.0.0
   ubuntu: '20.10'
 terminated: {}
