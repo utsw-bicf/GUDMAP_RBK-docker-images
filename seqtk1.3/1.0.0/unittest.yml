@@ -1,0 +1,3 @@
+commands:
+  - cmd: "seqtk 2>&1 | grep -o Version.*"
+    expect_text: "Version: 1.3"
