@@ -1,4 +1,4 @@
-FROM gudmaprbk/seqtk1.3:1.0.0
+FROM gudmaprbk/gudmap-rbk_base:1.0.0
 LABEL author="Gervaise H. Henry"
 
 RUN git clone https://github.com/lh3/seqtk.git && \
