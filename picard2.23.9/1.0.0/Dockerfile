@@ -6,7 +6,7 @@ RUN git clone https://github.com/broadinstitute/picard.git && \
   git checkout 2.23.9 && \
   echo "distributionBase=GRADLE_USER_HOME" > ./gradle/wrapper/gradle-wrapper.properties && \
   echo "distributionPath=wrapper/dists" >> ./gradle/wrapper/gradle-wrapper.properties && \
-  echo "distributionUrl=https\://services.gradle.org/distributions/gradle-6.7-bin.zip" >> ./gradle/wrapper/gradle-wrapper.properties && \
+  echo "distributionUrl=https\://services.gradle.org/distributions/gradle-6.8-rc-4-bin.zip" >> ./gradle/wrapper/gradle-wrapper.properties && \
   echo "zipStoreBase=GRADLE_USER_HOME" >> ./gradle/wrapper/gradle-wrapper.properties && \
   echo "zipStorePath=wrapper/dists" >> ./gradle/wrapper/gradle-wrapper.properties && \
   ./gradlew clean build && \
