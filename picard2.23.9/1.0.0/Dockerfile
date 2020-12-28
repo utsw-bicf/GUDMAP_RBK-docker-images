@@ -24,6 +24,7 @@ ENV PATH="/usr/bin/htslib-1.9/bin:/usr/bin/samtools-1.11/bin:$PATH"
 RUN git clone https://github.com/broadinstitute/picard.git && \
   cd picard && \
   git checkout 2.23.9 && \
+  sed -i "s/`head -3 ./gradle/wrapper/gradle-wrapper.properties | tail -1 `/distributionUrl=https\://services.gradle.org/distributions/gradle-6.7-bin.zip/" ./gradle/wrapper/gradle-wrapper.properties && \
   ./gradlew shadowJar
 
 ENV PATH="/picard/build/libs/:${PATH}"
