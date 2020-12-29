@@ -1,5 +1,5 @@
 commands:
-  - cmd: "java -jar /picard/build/libs/picard.jar MarkDuplicates --version"
+  - cmd: "java -jar /picard/build/libs/picard.jar MarkDuplicates --version 2>&1"
     expect_text: "2.23.9"
   - cmd: "samtools --version | head -n2"
     expect_text: |
