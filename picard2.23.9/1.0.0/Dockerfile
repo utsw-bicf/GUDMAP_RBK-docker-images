@@ -1,16 +1,8 @@
 FROM gudmaprbk/java15:1.0.0
 LABEL author="Gervaise H. Henry"
 
-RUN git clone https://github.com/broadinstitute/picard.git && \
-  cd picard && \
-  git checkout 2.23.9 && \
-  echo "distributionBase=GRADLE_USER_HOME" > ./gradle/wrapper/gradle-wrapper.properties && \
-  echo "distributionPath=wrapper/dists" >> ./gradle/wrapper/gradle-wrapper.properties && \
-  echo "distributionUrl=https\://services.gradle.org/distributions/gradle-6.8-rc-4-bin.zip" >> ./gradle/wrapper/gradle-wrapper.properties && \
-  echo "zipStoreBase=GRADLE_USER_HOME" >> ./gradle/wrapper/gradle-wrapper.properties && \
-  echo "zipStorePath=wrapper/dists" >> ./gradle/wrapper/gradle-wrapper.properties && \
-  ./gradlew clean build && \
-  ./gradlew shadowJar
+RUN mkdir -p /picard/build/libs/ && \
+    wget https://github.com/broadinstitute/picard/releases/download/2.23.9/picard.jar -O /picard/build/libs/picard.jar
 
 ENV PATH="/picard/build/libs/:${PATH}"
 
