@@ -40,7 +40,7 @@ images:
   java15:
     1.0.0:
       children:
-      - null
+      - picard2.23.9:1.0.0
       parents:
       - python3:1.0.0
   multiqc1.9:
@@ -49,6 +49,12 @@ images:
       - null
       parents:
       - python3:1.0.0
+  picard2.23.9:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - java15:1.0.0
   python3:
     1.0.0:
       children:
@@ -112,6 +118,7 @@ latest:
   hisat2.2.1: 1.0.0
   java15: 1.0.0
   multiqc1.9: 1.0.0
+  picard2.23.9: 1.0.0
   python3: 1.0.0
   r4.0: 1.0.0
   rseqc4.0.0: 1.0.0
