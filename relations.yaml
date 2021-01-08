@@ -17,6 +17,12 @@ images:
       - null
       parents:
       - python3:1.0.0
+  deriva1.4:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - python3:1.0.0
   fastqc0.11.9:
     1.0.0:
       children:
@@ -58,6 +64,7 @@ images:
   python3:
     1.0.0:
       children:
+      - deriva1.4:1.0.0
       - java15:1.0.0
       - multiqc1.9:1.0.0
       - deeptools3.5.0:1.0.0
@@ -113,6 +120,7 @@ latest:
   base: 1.0.0
   deeptools3.5.0: 1.0.0
   deriva1.3: 1.0.0
+  deriva1.4: 1.0.0
   fastqc0.11.9: 1.0.0
   gudmap-rbk_base: 1.0.0
   hisat2.2.1: 1.0.0
