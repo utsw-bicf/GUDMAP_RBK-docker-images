@@ -1,4 +1,5 @@
 FROM gudmaprbk/python3:1.0.0
 LABEL author="Gervaise H. Henry"
 
-RUN pip install 'multiqc==1.9'
+RUN git clone https://git.biohpc.swmed.edu/s181649/seqwho.git
+ENV PATH=./seqwho:${PATH} 
