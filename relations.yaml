@@ -64,6 +64,7 @@ images:
   python3:
     1.0.0:
       children:
+      - seqwho0.0.1:1.0.0
       - deriva1.4:1.0.0
       - java15:1.0.0
       - multiqc1.9:1.0.0
@@ -99,6 +100,12 @@ images:
       - null
       parents:
       - gudmap-rbk_base:1.0.0
+  seqwho0.0.1:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - python3:1.0.0
   subread2.0.1:
     1.0.0:
       children:
@@ -132,6 +139,7 @@ latest:
   rseqc4.0.0: 1.0.0
   samtools1.11: 1.0.0
   seqtk1.3: 1.0.0
+  seqwho0.0.1: 1.0.0
   subread2.0.1: 1.0.0
   trimgalore0.6.5: 1.0.0
   ubuntu: '20.10'
