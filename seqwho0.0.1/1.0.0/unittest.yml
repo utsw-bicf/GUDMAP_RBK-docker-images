@@ -1,5 +1,5 @@
 commands:
-  - cmd: "ls /"
-    expect_text: ""
-  - cmd: "ls /seqwho"
-    expect_text: ""
+  - cmd: "which seqwho.py"
+    expect_text: "/seqwho/seqwho.py"
+  - cmd: "seqwho.py --help | head -n1"
+    expect_text: "usage: seqwho.py [-h] -x IDX -f FILES [FILES ...] [-o OUT]"
