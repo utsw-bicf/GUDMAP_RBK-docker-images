@@ -1,3 +1,7 @@
 commands:
+  - cmd: "ls /"
+    expect_text: ""
+  - cmd: "ls /seqwho"
+    expect_text: ""
   - cmd: "python3 seqwho.py -h | grep -o Seq-Who:.*"
     expect_text: "Seq-Who: Full Version Beta-1.0.0"
