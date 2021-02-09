@@ -1,6 +1,3 @@
 commands:
-  - cmd: "which seqwho.py"
-    expect_text: "/seqwho/seqwho.py"
-  - cmd: "seqwho.py --help | head -n1"
-    expect_text: |
-      usage: seqwho.py \[\-h\] \-x IDX \-f FILES \[FILES ...\] \[\-o OUT\]
+  - cmd: "seqwho.py -h | grep -o 'Seq-Who:.*'"
+    expect_text: "Seq-Who: Full Version Beta-1.0.0"
