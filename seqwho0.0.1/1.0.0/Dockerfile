@@ -1,6 +1,6 @@
 FROM gudmaprbk/python3:1.0.0
 LABEL author="Gervaise H. Henry"
 
-RUN pip3 install joblib==1.0.1 seaborn==0.11.1 more-itertools==8.7.0 sklearn2==0.0.13 && \
+RUN pip3 install joblib==1.0.1 seaborn==0.11.1 more-itertools==8.7.0 scikit-learn==0.24.1 --user && \
     git clone https://git.biohpc.swmed.edu/s181649/seqwho.git /seqwho
 ENV PATH=/seqwho:$PATH
