@@ -1,10 +1,4 @@
 images:
-  base:
-    1.0.0:
-      children:
-      - null
-      parents:
-      - ubuntu:18.04
   deeptools3.5.0:
     1.0.0:
       children:
@@ -124,7 +118,6 @@ images:
       - gudmap-rbk_base:1.0.0
       parents: []
 latest:
-  base: 1.0.0
   deeptools3.5.0: 1.0.0
   deriva1.3: 1.0.0
   deriva1.4: 1.0.0
