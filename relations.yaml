@@ -142,5 +142,4 @@ latest:
   seqwho0.0.1: 1.0.0
   subread2.0.1: 1.0.0
   trimgalore0.6.5: 1.0.0
-  ubuntu: '20.10'
 terminated: {}
