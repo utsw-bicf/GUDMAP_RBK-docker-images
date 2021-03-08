@@ -1,0 +1,3 @@
+commands:
+  - cmd: "python --version"
+    expect_text: "Python 3.*"
