@@ -33,11 +33,12 @@ images:
       - ubuntu:20.10
     1.0.1:
       children:
-      - r4.0:1.0.1
-      - - python3:1.0.1
-      - - - null
+      - seqtk1.3:1.0.1
+      - - r4.0:1.0.1
+      - - - python3:1.0.1
+      - - - - null
       parents:
-      - - - ubuntu:20.10
+      - - - - ubuntu:20.10
   hisat2.2.1:
     1.0.0:
       children:
@@ -111,6 +112,11 @@ images:
       - null
       parents:
       - gudmap-rbk_base:1.0.0
+    1.0.1:
+      children:
+      - null
+      parents:
+      - gudmap-rbk_base:1.0.1
   seqwho0.0.1:
     1.0.0:
       children:
@@ -149,7 +155,7 @@ latest:
   r4.0: 1.0.1
   rseqc4.0.0: 1.0.0
   samtools1.11: 1.0.0
-  seqtk1.3: 1.0.0
+  seqtk1.3: 1.0.1
   seqwho0.0.1: 1.0.0
   subread2.0.1: 1.0.0
   trimgalore0.6.5: 1.0.0
