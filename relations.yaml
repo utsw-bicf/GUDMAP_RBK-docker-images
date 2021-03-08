@@ -31,6 +31,11 @@ images:
       - python3:1.0.0
       parents:
       - ubuntu:20.10
+    1.0.1:
+      children:
+      - null
+      parents:
+      - ubuntu:20.10
   hisat2.2.1:
     1.0.0:
       children:
@@ -115,14 +120,15 @@ images:
   ubuntu:
     '20.10':
       children:
-      - gudmap-rbk_base:1.0.0
+      - gudmap-rbk_base:1.0.1
+      - - gudmap-rbk_base:1.0.0
       parents: []
 latest:
   deeptools3.5.0: 1.0.0
   deriva1.3: 1.0.0
   deriva1.4: 1.0.0
   fastqc0.11.9: 1.0.0
-  gudmap-rbk_base: 1.0.0
+  gudmap-rbk_base: 1.0.1
   hisat2.2.1: 1.0.0
   java15: 1.0.0
   multiqc1.9: 1.0.0
