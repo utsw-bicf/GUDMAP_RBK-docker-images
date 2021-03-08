@@ -33,9 +33,10 @@ images:
       - ubuntu:20.10
     1.0.1:
       children:
-      - null
+      - python3:1.0.1
+      - - null
       parents:
-      - ubuntu:20.10
+      - - ubuntu:20.10
   hisat2.2.1:
     1.0.0:
       children:
@@ -75,6 +76,11 @@ images:
       - deriva1.3:1.0.0
       parents:
       - gudmap-rbk_base:1.0.0
+    1.0.1:
+      children:
+      - null
+      parents:
+      - gudmap-rbk_base:1.0.1
   r4.0:
     1.0.0:
       children:
@@ -133,7 +139,7 @@ latest:
   java15: 1.0.0
   multiqc1.9: 1.0.0
   picard2.23.9: 1.0.0
-  python3: 1.0.0
+  python3: 1.0.1
   r4.0: 1.0.0
   rseqc4.0.0: 1.0.0
   samtools1.11: 1.0.0
