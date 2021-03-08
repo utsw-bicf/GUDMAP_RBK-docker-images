@@ -1,0 +1,3 @@
+commands:
+  - cmd: "R --version | grep -o 'R version.*'"
+    expect_text: "R version 4.0.4"
