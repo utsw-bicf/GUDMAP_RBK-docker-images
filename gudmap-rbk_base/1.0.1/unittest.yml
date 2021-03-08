@@ -1,0 +1,3 @@
+commands:
+  - cmd: "/bin/bash -c \"lsb_release -d\""
+    expect_text: "Description:	Ubuntu 20.10"
