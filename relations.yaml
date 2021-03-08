@@ -61,6 +61,12 @@ images:
       - null
       parents:
       - python3:1.0.1
+  multiqc1.10:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - python3:1.0.1
   multiqc1.9:
     1.0.0:
       children:
@@ -90,11 +96,12 @@ images:
       - gudmap-rbk_base:1.0.0
     1.0.1:
       children:
-      - java15:1.0.1
-      - - deriva1.4:1.0.1
-      - - - null
+      - multiqc1.10:1.0.0
+      - - java15:1.0.1
+      - - - deriva1.4:1.0.1
+      - - - - null
       parents:
-      - - - gudmap-rbk_base:1.0.1
+      - - - - gudmap-rbk_base:1.0.1
   r4.0:
     1.0.0:
       children:
@@ -161,6 +168,7 @@ latest:
   gudmap-rbk_base: 1.0.1
   hisat2.2.1: 1.0.0
   java15: 1.0.1
+  multiqc1.10: 1.0.0
   multiqc1.9: 1.0.0
   picard2.23.9: 1.0.0
   python3: 1.0.1
