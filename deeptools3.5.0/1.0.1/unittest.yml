@@ -1,0 +1,3 @@
+commands:
+  - cmd: "deeptools --version"
+    expect_text: "deeptools 3.5.0"
