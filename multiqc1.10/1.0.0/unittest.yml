@@ -1,0 +1,3 @@
+commands:
+  - cmd: "multiqc --version"
+    expect_text: "multiqc, version 1.10"
