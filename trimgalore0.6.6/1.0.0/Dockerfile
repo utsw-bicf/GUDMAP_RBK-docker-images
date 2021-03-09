@@ -9,4 +9,4 @@ RUN curl -fsSL https://github.com/FelixKrueger/TrimGalore/archive/0.6.6.tar.gz -
   tar xvzf trim_galore.tar.gz && \
   rm -rf /trim_galore.tar.gz
 
-ENV PATH="/TrimGalore-0.6.5/:${PATH}"
+ENV PATH="/TrimGalore-0.6.6/:${PATH}"
