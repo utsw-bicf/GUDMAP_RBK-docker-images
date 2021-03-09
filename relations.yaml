@@ -33,6 +33,11 @@ images:
       - trimgalore0.6.5:1.0.0
       parents:
       - python3:1.0.0
+    1.0.1:
+      children:
+      - null
+      parents:
+      - python3:1.0.1
   gudmap-rbk_base:
     1.0.0:
       children:
@@ -101,14 +106,15 @@ images:
       - gudmap-rbk_base:1.0.0
     1.0.1:
       children:
-      - rseqc4.0.0:1.0.1
-      - - deeptools3.5.0:1.0.1
-      - - - multiqc1.10:1.0.0
-      - - - - java15:1.0.1
-      - - - - - deriva1.4:1.0.1
-      - - - - - - null
+      - fastqc0.11.9:1.0.1
+      - - rseqc4.0.0:1.0.1
+      - - - deeptools3.5.0:1.0.1
+      - - - - multiqc1.10:1.0.0
+      - - - - - java15:1.0.1
+      - - - - - - deriva1.4:1.0.1
+      - - - - - - - null
       parents:
-      - - - - - - gudmap-rbk_base:1.0.1
+      - - - - - - - gudmap-rbk_base:1.0.1
   r4.0:
     1.0.0:
       children:
@@ -176,7 +182,7 @@ latest:
   deeptools3.5.0: 1.0.1
   deriva1.3: 1.0.0
   deriva1.4: 1.0.1
-  fastqc0.11.9: 1.0.0
+  fastqc0.11.9: 1.0.1
   gudmap-rbk_base: 1.0.1
   hisat2.2.1: 1.0.0
   java15: 1.0.1
