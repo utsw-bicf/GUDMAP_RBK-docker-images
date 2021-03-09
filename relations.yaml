@@ -60,6 +60,11 @@ images:
       - null
       parents:
       - samtools1.11:1.0.0
+    1.0.1:
+      children:
+      - null
+      parents:
+      - samtools1.11:1.0.1
   java15:
     1.0.0:
       children:
@@ -152,9 +157,10 @@ images:
       - python3:1.0.0
     1.0.1:
       children:
-      - null
+      - hisat2.2.1:1.0.1
+      - - null
       parents:
-      - python3:1.0.1
+      - - python3:1.0.1
   seqtk1.3:
     1.0.0:
       children:
@@ -201,7 +207,7 @@ latest:
   deriva1.4: 1.0.1
   fastqc0.11.9: 1.0.1
   gudmap-rbk_base: 1.0.1
-  hisat2.2.1: 1.0.0
+  hisat2.2.1: 1.0.1
   java15: 1.0.1
   multiqc1.10: 1.0.0
   multiqc1.9: 1.0.0
