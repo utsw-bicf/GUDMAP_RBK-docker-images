@@ -101,13 +101,14 @@ images:
       - gudmap-rbk_base:1.0.0
     1.0.1:
       children:
-      - deeptools3.5.0:1.0.1
-      - - multiqc1.10:1.0.0
-      - - - java15:1.0.1
-      - - - - deriva1.4:1.0.1
-      - - - - - null
+      - rseqc4.0.0:1.0.1
+      - - deeptools3.5.0:1.0.1
+      - - - multiqc1.10:1.0.0
+      - - - - java15:1.0.1
+      - - - - - deriva1.4:1.0.1
+      - - - - - - null
       parents:
-      - - - - - gudmap-rbk_base:1.0.1
+      - - - - - - gudmap-rbk_base:1.0.1
   r4.0:
     1.0.0:
       children:
@@ -125,6 +126,11 @@ images:
       - null
       parents:
       - python3:1.0.0
+    1.0.1:
+      children:
+      - null
+      parents:
+      - python3:1.0.1
   samtools1.11:
     1.0.0:
       children:
@@ -179,7 +185,7 @@ latest:
   picard2.23.9: 1.0.0
   python3: 1.0.1
   r4.0: 1.0.1
-  rseqc4.0.0: 1.0.0
+  rseqc4.0.0: 1.0.1
   samtools1.11: 1.0.0
   seqtk1.3: 1.0.1
   seqwho0.0.1: 1.0.0
