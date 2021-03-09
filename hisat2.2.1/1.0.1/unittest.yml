@@ -1,0 +1,11 @@
+commands:
+  - cmd: "hisat2 --version | head -n 2"
+    expect_text: |
+      /usr/bin/hisat2-2.2.1/hisat2-align-s version 2.2.1
+      64-bit
+  - cmd: "gtfToGenePred 2>&1 | head"
+    expect_text: |
+      gtfToGenePred - convert a GTF file to a genePred
+  - cmd: "genePredToBed 2>&1 | head"
+    expect_text: |
+      genePredToBed - Convert from genePred to bed format. Does not yet handle genePredExt
