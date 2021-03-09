@@ -36,9 +36,9 @@ images:
     1.0.1:
       children:
       - trimgalore0.6.6:1.0.0
-      - - null
+      - - - null
       parents:
-      - - python3:1.0.1
+      - - - python3:1.0.1
   gudmap-rbk_base:
     1.0.0:
       children:
