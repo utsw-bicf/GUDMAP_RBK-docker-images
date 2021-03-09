@@ -104,14 +104,15 @@ images:
       - gudmap-rbk_base:1.0.0
     1.0.1:
       children:
-      - fastqc0.11.9:1.0.1
-      - rseqc4.0.0:1.0.1
-      - deeptools3.5.0:1.0.1
-      -  multiqc1.10:1.0.0
-      - java15:1.0.1
-      - deriva1.4:1.0.1
+      - samtools1.11:1.0.1
+      - - fastqc0.11.9:1.0.1
+      - - rseqc4.0.0:1.0.1
+      - - deeptools3.5.0:1.0.1
+      - - multiqc1.10:1.0.0
+      - - java15:1.0.1
+      - - deriva1.4:1.0.1
       parents:
-      - gudmap-rbk_base:1.0.1
+      - - gudmap-rbk_base:1.0.1
   r4.0:
     1.0.0:
       children:
@@ -140,6 +141,11 @@ images:
       - hisat2.2.1:1.0.0
       parents:
       - python3:1.0.0
+    1.0.1:
+      children:
+      - null
+      parents:
+      - python3:1.0.1
   seqtk1.3:
     1.0.0:
       children:
@@ -183,7 +189,7 @@ latest:
   python3: 1.0.1
   r4.0: 1.0.1
   rseqc4.0.0: 1.0.1
-  samtools1.11: 1.0.0
+  samtools1.11: 1.0.1
   seqtk1.3: 1.0.1
   seqwho0.0.1: 1.0.0
   subread2.0.1: 1.0.0
