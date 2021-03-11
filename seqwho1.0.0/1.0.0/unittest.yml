@@ -1,0 +1,5 @@
+commands:
+  - cmd: "seqwho.py -h | grep -o 'Seq-Who:.*'"
+    expect_text: "fail"
+  - cmd: "seqtk 2>&1 | grep -o Version.*"
+    expect_text: "Version: 1.3"
