@@ -36,22 +36,21 @@ images:
     1.0.1:
       children:
       - trimgalore0.6.6:1.0.0
-      - - - null
       parents:
-      - - - python3:1.0.1
+      - python3:1.0.1
   gudmap-rbk_base:
     1.0.0:
       children:
+      - python3:1.0.0
       - r4.0:1.0.0
       - seqtk1.3:1.0.0
-      - python3:1.0.0
       parents:
       - ubuntu:20.10
     1.0.1:
       children:
-      - seqtk1.3:1.0.1
-      - r4.0:1.0.1
       - python3:1.0.1
+      - r4.0:1.0.1
+      - seqtk1.3:1.0.1
       parents:
       - ubuntu:20.10
   hisat2.2.1:
@@ -74,9 +73,8 @@ images:
     1.0.1:
       children:
       - picard2.25.0:1.0.0
-      - - null
       parents:
-      - - python3:1.0.1
+      - python3:1.0.1
   multiqc1.10:
     1.0.0:
       children:
@@ -104,28 +102,29 @@ images:
   python3:
     1.0.0:
       children:
-      - seqwho0.0.1:1.0.0
+      - deeptools3.5.0:1.0.0
+      - deriva1.3:1.0.0
       - deriva1.4:1.0.0
+      - fastqc0.11.9:1.0.0
       - java15:1.0.0
       - multiqc1.9:1.0.0
-      - deeptools3.5.0:1.0.0
       - rseqc4.0.0:1.0.0
-      - fastqc0.11.9:1.0.0
       - samtools1.11:1.0.0
-      - deriva1.3:1.0.0
+      - seqwho0.0.1:1.0.0
+      - seqwho1.0.0:1.0.0
       parents:
       - gudmap-rbk_base:1.0.0
     1.0.1:
       children:
+      - deeptools3.5.0:1.0.1
+      - deriva1.4:1.0.1
+      - fastqc0.11.9:1.0.1
+      - java15:1.0.1
+      - multiqc1.10:1.0.0
+      - rseqc4.0.0:1.0.1
       - samtools1.11:1.0.1
-      - - fastqc0.11.9:1.0.1
-      - - rseqc4.0.0:1.0.1
-      - - deeptools3.5.0:1.0.1
-      - - multiqc1.10:1.0.0
-      - - java15:1.0.1
-      - - deriva1.4:1.0.1
       parents:
-      - - gudmap-rbk_base:1.0.1
+      - gudmap-rbk_base:1.0.1
   r4.0:
     1.0.0:
       children:
@@ -135,9 +134,8 @@ images:
     1.0.1:
       children:
       - subread2.0.1:1.0.1
-      - - null
       parents:
-      - - gudmap-rbk_base:1.0.1
+      - gudmap-rbk_base:1.0.1
   rseqc4.0.0:
     1.0.0:
       children:
@@ -158,9 +156,8 @@ images:
     1.0.1:
       children:
       - hisat2.2.1:1.0.1
-      - - null
       parents:
-      - - python3:1.0.1
+      - python3:1.0.1
   seqtk1.3:
     1.0.0:
       children:
@@ -173,6 +170,12 @@ images:
       parents:
       - gudmap-rbk_base:1.0.1
   seqwho0.0.1:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - python3:1.0.0
+  seqwho1.0.0:
     1.0.0:
       children:
       - null
@@ -219,6 +222,7 @@ latest:
   samtools1.11: 1.0.1
   seqtk1.3: 1.0.1
   seqwho0.0.1: 1.0.0
+  seqwho1.0.0: 1.0.0
   subread2.0.1: 1.0.1
   trimgalore0.6.5: 1.0.0
   trimgalore0.6.6: 1.0.0
