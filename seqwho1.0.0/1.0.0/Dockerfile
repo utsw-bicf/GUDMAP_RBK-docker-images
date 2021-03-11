@@ -3,7 +3,7 @@ LABEL author="Gervaise H. Henry"
 
 RUN pip3 install Cython==0.29.21
 RUN pip3 install joblib==1.0.1 seaborn==0.11.1 more-itertools==8.7.0 scikit-learn==0.21.3 && \
-    git clone https://github.com/DaehwanKimLab/seqwho /seqwho && \
+    git clone https://github.com/DaehwanKimLab/seqwho.git /seqwho && \
     git checkout v1.0.0
 ENV PATH=/seqwho:$PATH
 
